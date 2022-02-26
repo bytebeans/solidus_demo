@@ -59,7 +59,7 @@ Spree::Core::Engine.routes.draw do
   put '/cart/empty', to: 'orders#empty', as: :empty_cart
 
   # route globbing for pretty nested taxon and product paths
-  get '/t/*id', to: 'taxons#show', as: :nested_taxons
+  get '/shop/*id', to: 'taxons#show', as: :nested_taxons
 
   get '/unauthorized', to: 'home#unauthorized', as: :unauthorized
   get '/cart_link', to: 'store#cart_link', as: :cart_link
